@@ -31,6 +31,4 @@ test('Validar todas las pestañas del header', async ({ page }) => {
 
     await page.getByAltText('Logo').click();
     await expect(page).toHaveTitle(/Fitness Club/);
-    await page.pause();
-
 });
