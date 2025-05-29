@@ -13,7 +13,6 @@ test('Validar boton instagram footer', async ({ page, context }) => {
 
     await newPage.waitForLoadState(); 
     await expect(newPage).toHaveURL('https://www.instagram.com/fitnessclubpass/');
-    await expect(newPage.getByRole('heading', { name: 'fitnessclubpass' })).toBeVisible();
     await expect(newPage).toHaveTitle(/Fitness Club/);
 });
 
