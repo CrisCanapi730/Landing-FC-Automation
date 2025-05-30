@@ -25,7 +25,7 @@ test('Validar todas las pestañas del header', async ({ page }) => {
     await expect(page).toHaveTitle(/Partners/);
 
     await page.getByRole('link', {name: 'Centros FC'}).click();
-    await page.waitForLoadState('domcontentloaded');
+    // await page.waitForLoadState('domcontentloaded');
     await expect(page).toHaveTitle(/Centros/);
     await expect(page.locator('h1', {hasText: 'DESCUBRE NUESTROS CENTROS'})).toBeVisible();
 
