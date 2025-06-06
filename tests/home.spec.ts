@@ -1,5 +1,4 @@
 import { test, expect } from '@playwright/test';
-import { get } from 'http';
 
 test('Validar boton nuestros centros 1', async ({ page }) => {
 
